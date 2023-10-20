@@ -1,0 +1,148 @@
+/* styles.css */
+
+/* Загальні стилі для всього сайту */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 0;
+    background-color: #f2f2f2;
+     background-size: cover; /* Масштабування фону, щоб воно повністю покривало сторінку */
+    background-repeat: no-repeat; /* Запобігає повторенню фонового зображення */
+    background-attachment: fixed; /* Фіксований фон при прокручуванні сторінки */
+    background-position: center; /* Розташування фону в центрі сторінки */
+    color: #333333; /* Колір тексту на фоні */
+}
+body .text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: right;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); /* По замовчуванню напівпрозрачний фон */
+    z-index: 1000;
+    transition: background-color 0.5s; /* Плавна анімація зміни фону */
+}
+
+header a:hover { 
+    transition: color 0.4s;
+    color: rgb(85, 198, 255); 
+}
+
+h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.name_BTM {
+    margin-left: 200px;
+}
+
+
+/* .header__ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Стилі для розділів сторінки */
+
+section {
+    background-color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Стилі для фотографій */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.allPhotos {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.allPhotos:hover {
+transform: scale(1.1);
+}
+
+.video {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+  
+iframe {
+    width: 100%;
+}
+
+.audio {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+  
+audio {
+    color: #003cff;
+
+}
+
+/* Стилі для списку учасників */
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Стилі для футера */
+
+footer {
+    background-color: #333;
+    color: #0084ff;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
